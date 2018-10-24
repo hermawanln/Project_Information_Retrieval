@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Search Book by Animal Name</title>
+        <style>
+          body {
+              background-color: #b3f995;
+              width: 70%;     /* specify a width! */
+              margin: 0 auto; /* center */
+              text-align: center;
+          }
+        </style>
+        <script src="./search.js"></script>
+    </head>
+    <body>
+      <h1>Search Book by Animal Name</h1>
+      <h3></h3>
+      <h3>Anda bisa mencari judul buku cerita fabel untuk anak berdasarkan nama hewan yang hendak dicari.</h3>
+      <input id="query" value="fox" label="Enter Query Here" onkeydown="if (event.keyCode == 13) { beginQuery()}">
+      <button id=submitQuery onclick="beginQuery()">Cari Buku</button>
+      <div id="searchResults">
+      </div>
+      <p>Dibawah ini adalah data dari dataset buku yang bisa anda cari.</p>
+      <textarea id="documents" rows="20" cols="50" autocomplete=off>
+      </textarea>
+    </body>
+
+</html>
